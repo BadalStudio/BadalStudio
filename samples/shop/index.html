@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NovaShop — Discover Something New</title>
+
+  <meta name="description" content="Discover trending gadgets, fashion, home essentials and more at NovaShop.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    ✨ Discover your next favourite thing
+    <span> | </span>
+    Explore the NovaShop collection
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">N</span>
+        Nova<span>Shop</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle"
+          aria-label="Search products">⌕</button>
+
+        <button class="cart-button" id="cartButton">
+          🛒 Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="search-container container" id="searchContainer" hidden>
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search products..."
+        aria-label="Search products"
+      >
+      <button id="clearSearch" type="button">Clear</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <p class="eyebrow">WELCOME TO THE NOVASHOP EXPERIENCE</p>
+
+          <h1>
+            Find Your Next
+            <span>Favourite Thing.</span>
+          </h1>
+
+          <p class="hero-description">
+            From everyday essentials to exciting new finds,
+            explore products that make life a little better.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">
+              Explore Products →
+            </a>
+
+            <a href="#categories" class="btn btn-secondary">
+              Browse Categories
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-item">
+              <strong>6+</strong>
+              <span>Categories</span>
+            </div>
+
+            <div class="trust-item">
+              <strong>12</strong>
+              <span>Demo Products</span>
+            </div>
+
+            <div class="trust-item">
+              <strong>Easy</strong>
+              <span>Shopping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow"></div>
+
+          <div class="hero-product-card">
+            <span class="floating-label">✨ TRENDING FINDS</span>
+
+            <div class="hero-product-art">
+              <div class="hero-orbit"></div>
+              <div class="hero-product-emoji">🎧</div>
+            </div>
+
+            <div class="hero-product-info">
+              <div>
+                <p>FEATURED PICK</p>
+                <h3>Wireless Headphones</h3>
+              </div>
+
+              <span class="hero-price">₹1,499</span>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-top">
+            <span>⚡</span>
+            <div>
+              <strong>Fresh Finds</strong>
+              <small>New things to explore</small>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-bottom">
+            <span>💙</span>
+            <div>
+              <strong>Made for You</strong>
+              <small>Discover your style</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+      <div class="container benefits-grid">
+
+        <div class="benefit-item">
+          <span class="benefit-icon">🚚</span>
+          <div>
+            <h3>Delivery Options</h3>
+            <p>Explore convenient delivery</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <span class="benefit-icon">🔒</span>
+          <div>
+            <h3>Secure Shopping</h3>
+            <p>Security-ready store design</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <span class="benefit-icon">💬</span>
+          <div>
+            <h3>Customer Support</h3>
+            <p>Help when you need it</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <span class="benefit-icon">✨</span>
+          <div>
+            <h3>Curated Finds</h3>
+            <p>Products worth exploring</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">EXPLORE YOUR INTERESTS</p>
+            <h2>Shop by <span>Category</span></h2>
+            <p class="section-description">
+              A little something for every part of your life.
+            </p>
+          </div>
+        </div>
+
+        <div class="category-grid">
+
+          <button class="category-card" data-category="Electronics">
+            <span class="category-icon">🎧</span>
+            <h3>Electronics</h3>
+            <p>Gadgets & tech</p>
+          </button>
+
+          <button class="category-card" data-category="Fashion">
+            <span class="category-icon">👟</span>
+            <h3>Fashion</h3>
+            <p>Style & comfort</p>
+          </button>
+
+          <button class="category-card" data-category="Home">
+            <span class="category-icon">🏡</span>
+            <h3>Home & Living</h3>
+            <p>Make it yours</p>
+          </button>
+
+          <button class="category-card" data-category="Beauty">
+            <span class="category-icon">🧴</span>
+            <h3>Beauty</h3>
+            <p>Everyday care</p>
+          </button>
+
+          <button class="category-card" data-category="Sports">
+            <span class="category-icon">⚽</span>
+            <h3>Sports</h3>
+            <p>Move & play</p>
+          </button>
+
+          <button class="category-card" data-category="Books">
+            <span class="category-icon">📚</span>
+            <h3>Books</h3>
+            <p>Ideas & stories</p>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products-section" id="products">
+      <div class="container">
+
+        <div class="section-heading products-heading">
+          <div>
+            <p class="eyebrow">HANDPICKED FOR YOU</p>
+            <h2>Trending <span>Products</span></h2>
+            <p class="section-description">
+              Discover something new. Find something you love.
+            </p>
+          </div>
+
+          <button class="text-button" id="showAllProducts">
+            Show All Products →
+          </button>
+        </div>
+
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-button active" data-filter="All">All</button>
+          <button class="filter-button" data-filter="Electronics">Electronics</button>
+          <button class="filter-button" data-filter="Fashion">Fashion</button>
+          <button class="filter-button" data-filter="Home">Home</button>
+          <button class="filter-button" data-filter="Beauty">Beauty</button>
+          <button class="filter-button" data-filter="Sports">Sports</button>
+          <button class="filter-button" data-filter="Books">Books</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <!-- Electronics -->
+          <article class="product-card"
+            data-category="Electronics"
+            data-name="Wireless Headphones"
+            data-price="1499">
+
+            <div class="product-image product-electronics">
+              <span class="product-badge">POPULAR</span>
+              <button class="wishlist-button" aria-label="Save Wireless Headphones">♡</button>
+              <span class="product-emoji">🎧</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Electronics</p>
+              <h3>Wireless Headphones</h3>
+              <p class="product-description">Your music, your world.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹1,499 <del>₹1,999</del></div>
+                <button class="add-to-cart" data-add="Wireless Headphones" aria-label="Add Wireless Headphones to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card"
+            data-category="Electronics"
+            data-name="Smart Watch"
+            data-price="2199">
+
+            <div class="product-image product-watch">
+              <span class="product-badge sale-badge">SALE</span>
+              <button class="wishlist-button" aria-label="Save Smart Watch">♡</button>
+              <span class="product-emoji">⌚</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Electronics</p>
+              <h3>Smart Watch</h3>
+              <p class="product-description">Stay connected every day.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹2,199 <del>₹2,799</del></div>
+                <button class="add-to-cart" data-add="Smart Watch" aria-label="Add Smart Watch to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fashion -->
+          <article class="product-card"
+            data-category="Fashion"
+            data-name="Classic Sneakers"
+            data-price="1799">
+
+            <div class="product-image product-fashion">
+              <span class="product-badge">TRENDING</span>
+              <button class="wishlist-button" aria-label="Save Classic Sneakers">♡</button>
+              <span class="product-emoji">👟</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Fashion</p>
+              <h3>Classic Sneakers</h3>
+              <p class="product-description">Comfort for every step.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹1,799 <del>₹2,299</del></div>
+                <button class="add-to-cart" data-add="Classic Sneakers" aria-label="Add Classic Sneakers to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card"
+            data-category="Fashion"
+            data-name="Everyday Backpack"
+            data-price="999">
+
+            <div class="product-image product-backpack">
+              <button class="wishlist-button" aria-label="Save Everyday Backpack">♡</button>
+              <span class="product-emoji">🎒</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Fashion</p>
+              <h3>Everyday Backpack</h3>
+              <p class="product-description">Ready for your next journey.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹999 <del>₹1,299</del></div>
+                <button class="add-to-cart" data-add="Everyday Backpack" aria-label="Add Everyday Backpack to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Home -->
+          <article class="product-card"
+            data-category="Home"
+            data-name="Desk Lamp"
+            data-price="799">
+
+            <div class="product-image product-home">
+              <button class="wishlist-button" aria-label="Save Desk Lamp">♡</button>
+              <span class="product-emoji">💡</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Home & Living</p>
+              <h3>Desk Lamp</h3>
+              <p class="product-description">Light up your workspace.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹799 <del>₹1,099</del></div>
+                <button class="add-to-cart" data-add="Desk Lamp" aria-label="Add Desk Lamp to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card"
+            data-category="Home"
+            data-name="Coffee Mug"
+            data-price="399">
+
+            <div class="product-image product-mug">
+              <button class="wishlist-button" aria-label="Save Coffee Mug">♡</button>
+              <span class="product-emoji">☕</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Home & Living</p>
+              <h3>Coffee Mug</h3>
+              <p class="product-description">A little comfort in every cup.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹399 <del>₹499</del></div>
+                <button class="add-to-cart" data-add="Coffee Mug" aria-label="Add Coffee Mug to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Beauty -->
+          <article class="product-card"
+            data-category="Beauty"
+            data-name="Skincare Set"
+            data-price="899">
+
+            <div class="product-image product-beauty">
+              <span class="product-badge">NEW</span>
+              <button class="wishlist-button" aria-label="Save Skincare Set">♡</button>
+              <span class="product-emoji">🧴</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Beauty</p>
+              <h3>Skincare Set</h3>
+              <p class="product-description">Simple everyday self-care.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹899 <del>₹1,199</del></div>
+                <button class="add-to-cart" data-add="Skincare Set" aria-label="Add Skincare Set to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card"
+            data-category="Beauty"
+            data-name="Beauty Essentials"
+            data-price="649">
+
+            <div class="product-image product-beauty-two">
+              <button class="wishlist-button" aria-label="Save Beauty Essentials">♡</button>
+              <span class="product-emoji">🪞</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Beauty</p>
+              <h3>Beauty Essentials</h3>
+              <p class="product-description">Little things, lovely routines.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹649 <del>₹849</del></div>
+                <button class="add-to-cart" data-add="Beauty Essentials" aria-label="Add Beauty Essentials to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sports -->
+          <article class="product-card"
+            data-category="Sports"
+            data-name="Sports Football"
+            data-price="599">
+
+            <div class="product-image product-sports">
+              <button class="wishlist-button" aria-label="Save Sports Football">♡</button>
+              <span class="product-emoji">⚽</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Sports</p>
+              <h3>Sports Football</h3>
+              <p class="product-description">Bring your game to life.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹599 <del>₹799</del></div>
+                <button class="add-to-cart" data-add="Sports Football" aria-label="Add Sports Football to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card"
+            data-category="Sports"
+            data-name="Fitness Bottle"
+            data-price="349">
+
+            <div class="product-image product-bottle">
+              <button class="wishlist-button" aria-label="Save Fitness Bottle">♡</button>
+              <span class="product-emoji">🥤</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Sports</p>
+              <h3>Fitness Bottle</h3>
+              <p class="product-description">Keep hydration close by.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹349 <del>₹449</del></div>
+                <button class="add-to-cart" data-add="Fitness Bottle" aria-label="Add Fitness Bottle to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Books -->
+          <article class="product-card"
+            data-category="Books"
+            data-name="Creative Journal"
+            data-price="299">
+
+            <div class="product-image product-books">
+              <button class="wishlist-button" aria-label="Save Creative Journal">♡</button>
+              <span class="product-emoji">📓</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Books</p>
+              <h3>Creative Journal</h3>
+              <p class="product-description">Your ideas deserve a page.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹299 <del>₹399</del></div>
+                <button class="add-to-cart" data-add="Creative Journal" aria-label="Add Creative Journal to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card"
+            data-category="Books"
+            data-name="Learning Book"
+            data-price="449">
+
+            <div class="product-image product-learning">
+              <span class="product-badge">STAFF PICK</span>
+              <button class="wishlist-button" aria-label="Save Learning Book">♡</button>
+              <span class="product-emoji">📚</span>
+            </div>
+
+            <div class="product-info">
+              <p class="product-category">Books</p>
+              <h3>Learning Book</h3>
+              <p class="product-description">Discover something new.</p>
+              <div class="product-bottom">
+                <div class="product-price">₹449 <del>₹599</del></div>
+                <button class="add-to-cart" data-add="Learning Book" aria-label="Add Learning Book to cart">+</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="empty-message" id="emptyMessage" hidden>
+          No products found. Try another search!
+        </p>
+
+        <p class="demo-note">
+          Demo store: product listings and prices are examples.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="promo-section">
+      <div class="container">
+        <div class="promo-banner">
+          <div class="promo-content">
+            <p class="eyebrow">YOUR NEXT DISCOVERY STARTS HERE</p>
+            <h2>Good Finds.<br><span>Great Possibilities.</span></h2>
+            <p>
+              Explore our demo collection and find a new favourite.
+            </p>
+            <a href="#products" class="btn btn-light">
+              Find Your Favourite →
+            </a>
+          </div>
+
+          <div class="promo-art" aria-hidden="true">
+            <span>🎁</span>
+            <span>✨</span>
+            <span>🛍️</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+          <div class="about-icon">N<span>✦</
