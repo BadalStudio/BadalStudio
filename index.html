@@ -3,168 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050b18">
+    <meta name="description" content="Badal Studio builds modern websites, digital projects and creative tools.">
 
-    <title>Badal Studio</title>
-
+    <title>Badal Studio — Learn. Build. Grow.</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">BADAL STUDIO</div>
+<header class="header">
+    <a href="#home" class="logo" aria-label="Badal Studio Home">
+        <span class="logo-mark">B</span>
+        <span>BADAL <strong>STUDIO</strong></span>
+    </a>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#tools">Tools</a>
-            <a href="#about">About</a>
-        </nav>
-    </header>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#samples">Work Samples</a>
+        <a href="#services">Services</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Let's Talk ↗</a>
+    </nav>
+</header>
 
+<main>
 
-    <main id="home">
+<section id="home" class="hero section-wrap">
+    <div class="hero-content">
+        <p class="eyebrow">LEARN · BUILD · GROW</p>
 
-        <section class="hero">
+        <h1>Welcome to<br><span>Badal Studio.</span></h1>
 
-            <p class="tag">BUILD • CREATE • GROW</p>
+        <p class="hero-description">
+            We turn ideas into digital experiences.
+            From modern websites to creative tools,
+            games and AI experiments — let's build
+            something real.
+        </p>
 
-            <h1>
-                Welcome to<br>
-                <span>Badal Studio</span>
-            </h1>
+        <div class="hero-buttons">
+            <a href="#samples" class="btn btn-primary">
+                Explore Our Work <span>↗</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
 
-            <p class="description">
-                A personal development platform for building
-                projects, tools, games and AI experiments.
+        <div class="hero-note">
+            <span class="status-dot"></span>
+            Learn. Build. Grow. One project at a time.
+        </div>
+    </div>
+
+    <div class="hero-visual" aria-label="Creative coding illustration">
+        <div class="visual-glow"></div>
+
+        <div class="code-window">
+            <div class="window-top">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <span>badal-studio / workspace</span>
+            </div>
+
+            <div class="code-content">
+                <p><span>01</span> &lt;idea&gt;</p>
+                <p class="code-highlight">Learn something</p>
+                <p class="code-highlight">meaningful.</p>
+                <p><span>02</span> &lt;/idea&gt;</p>
+                <div class="code-divider"></div>
+                <p class="code-small">LEARN → BUILD → GROW</p>
+            </div>
+        </div>
+
+        <div class="floating-chip chip-one">✦ Creative Ideas</div>
+        <div class="floating-chip chip-two">{"</>"} Clean Code</div>
+    </div>
+</section>
+
+<section class="intro section-wrap">
+    <div>
+        <p class="section-label">01 / THE STUDIO</p>
+        <h2>Small ideas.<br><span>Big possibilities.</span></h2>
+    </div>
+
+    <p class="intro-text">
+        Badal Studio is where creativity meets code.
+        We explore web development, build digital
+        projects and turn concepts into working
+        experiences.
+    </p>
+</section>
+
+<section id="samples" class="section-wrap samples-section">
+    <div class="section-heading">
+        <div>
+            <p class="section-label">02 / OUR WORK</p>
+            <h2>Work <span>Samples.</span></h2>
+            <p class="section-description">
+                Explore our live website demos.
+                Every project is an opportunity to learn and create.
             </p>
+        </div>
+        <span class="project-count">02 PROJECTS</span>
+    </div>
 
-            <div class="buttons">
-                <button id="exploreBtn">Explore Studio</button>
-                <button class="secondary-btn">View Projects</button>
-            </div>
+    <div class="sample-grid">
 
-        </section>
+        <article class="sample-card" data-sample="tuition">
+            <a
+                class="sample-preview tuition-preview"
+                href="Sample/Tuition/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open BrightPath Academy demo">
 
-
-        <section id="tools" class="section">
-
-            <p class="section-label">STUDIO</p>
-
-            <h2>Build Something Real.</h2>
-
-            <div class="cards">
-
-                <div class="card">
-                    <div class="icon">⌘</div>
-                    <h3>Codez</h3>
-                    <p>
-                        A coding workspace for creating
-                        and managing projects.
-                    </p>
-                </div>
-
-
-                <div class="card">
-                    <div class="icon">↗</div>
-                    <h3>Live Hosting</h3>
-                    <p>
-                        Build toward a system that can
-                        publish websites to the web.
-                    </p>
-                </div>
-
-
-                <div class="card">
-                    <div class="icon">◆</div>
-                    <h3>AI Lab</h3>
-                    <p>
-                        Experiment with AI ideas,
-                        tools and future products.
-                    </p>
-                </div>
-
-
-                <div class="card">
-                    <div class="icon">◇</div>
-                    <h3>Games</h3>
-                    <p>
-                        Create and experiment with
-                        browser games.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="projects" class="section projects">
-
-            <p class="section-label">PROJECTS</p>
-
-            <h2>Things We're Building.</h2>
-
-            <div class="project-list">
-
-                <div class="project">
-                    <span>01</span>
-                    <div>
-                        <h3>Codez</h3>
-                        <p>Coding workspace</p>
+                <div class="preview-browser">
+                    <div class="preview-bar">
+                        <span class="mini-logo">BrightPath</span>
+                        <span>Home　 Courses　 About</span>
                     </div>
-                    <b>BUILDING</b>
-                </div>
 
+                    <div class="tuition-preview-content">
+                        <div>
+                            <span class="preview-tag">LEARN & GROW</span>
+                            <h3>Learn Today.<br>Build Tomorrow.</h3>
+                            <span class="preview-button">Explore Courses ↗</span>
+                        </div>
 
-                <div class="project">
-                    <span>02</span>
-                    <div>
-                        <h3>Worm Hunt</h3>
-                        <p>Browser game</p>
+                        <div class="preview-art">
+                            <span>✦</span>
+                            <strong>Learn.</strong>
+                            <strong>Grow.</strong>
+                        </div>
                     </div>
-                    <b>BUILDING</b>
                 </div>
 
+                <span class="preview-open">↗</span>
+            </a>
 
-                <div class="project">
-                    <span>03</span>
+            <div class="sample-info">
+                <div class="sample-title-row">
                     <div>
-                        <h3>MMOD Web</h3>
-                        <p>Minecraft project</p>
+                        <span class="sample-category">EDUCATION</span>
+                        <h3>BrightPath Academy</h3>
                     </div>
-                    <b>PLANNED</b>
+                    <span class="sample-number">01</span>
                 </div>
 
+                <p>
+                    A modern tuition website concept featuring
+                    courses, student information and enquiry features.
+                </p>
+
+                <div class="sample-actions">
+                    <a
+                        href="Sample/Tuition/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary sample-btn">
+                        Live Demo ↗
+                    </a>
+                </div>
             </div>
+        </article>
 
-        </section>
+        <article class="sample-card" data-sample="shop">
+            <a
+                class="sample-preview shop-preview"
+                href="Sample/Shop/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open NovaShop demo">
 
+                <div class="preview-browser shop-browser">
+                    <div class="preview-bar">
+                        <span class="mini-logo">NovaShop.</span>
+                        <span>Discover　 Categories　 Cart</span>
+                    </div>
 
-        <section id="about" class="section about">
+                    <div class="shop-preview-content">
+                        <div>
+                            <span class="preview-tag">SMART SHOPPING</span>
+                            <h3>Better Products.<br>Better Living.</h3>
+                            <span class="preview-button">Shop Collection ↗</span>
+                        </div>
 
-            <p class="section-label">ABOUT</p>
+                        <div class="product-art">
+                            <span class="product-orbit"></span>
+                            <span class="product-symbol">◉</span>
+                            <span class="product-caption">NOVA / COLLECTION</span>
+                        </div>
+                    </div>
+                </div>
 
-            <h2>One Studio.<br>Many Ideas.</h2>
+                <span class="preview-open">↗</span>
+            </a>
 
-            <p>
-                Badal Studio is being built as a central place
-                to create, experiment and turn ideas into real
-                products.
-            </p>
+            <div class="sample-info">
+                <div class="sample-title-row">
+                    <div>
+                        <span class="sample-category shop-category">E-COMMERCE</span>
+                        <h3>NovaShop</h3>
+                    </div>
+                    <span class="sample-number">02</span>
+                </div>
 
-        </section>
+                <p>
+                    A clean online storefront concept with
+                    product categories, search and a demo cart.
+                </p>
 
-    </main>
+                <div class="sample-actions">
+                    <a
+                        href="Sample/Shop/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary sample-btn">
+                        Live Demo ↗
+                    </a>
+                </div>
+            </div>
+        </article>
 
+    </div>
 
-    <footer>
-        <p>© 2026 Badal Studio</p>
-        <p>Build. Create. Grow.</p>
-    </footer>
+    <p class="samples-note">
+        More projects will appear here as the studio grows.
+    </p>
+</section>
 
+<section id="services" class="section-wrap services-section">
+    <div class="section-heading">
+        <div>
+            <p class="section-label">03 / WHAT WE DO</p>
+            <h2>Ideas into <span>digital reality.</span></h2>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="services-grid">
+        <article class="service-card">
+            <span class="service-icon">⌘</span>
+            <h3>Website Development</h3>
+            <p>Responsive websites with thoughtful layouts, useful features and clean code.</p>
+            <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon purple-icon">✳</span>
+            <h3>UI & Web Design</h3>
+            <p>Original visual styles that make digital experiences clear and memorable.</p>
+            <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon green-icon">⌘</span>
+            <h3>Creative Tools</h3>
+            <p>Experiments with coding utilities, productivity tools and new ideas.</p>
+            <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon orange-icon">◇</span>
+            <h3>Games & AI Experiments</h3>
+            <p>Exploring browser games, interactive projects and AI-powered possibilities.</p>
+            <span class="service-arrow">↗</span>
+        </article>
+    </div>
+</section>
+
+<section id="tools" class="section-wrap tools-section">
+    <p class="section-label">04 / THE LAB</p>
+    <h2>Building what's <span>next.</span></h2>
+
+    <p class="section-description">
+        These are studio ideas and ongoing experiments.
+        Their status will change as development progresses.
+    </p>
+
+    <div class="tool-list">
+        <article class="tool-item">
+            <span class="tool-index">01</span>
+            <div class="tool-icon">{"</>"}</div>
+            <div class="tool-details">
+                <h3>Codez</h3>
+                <p>A coding workspace project.</p>
+            </div>
+            <span class="tool-status status-building">IN PROGRESS</span>
+        </article>
+
+        <article class="tool-item">
+            <span class="tool-index">02</span>
+            <div class="tool-icon">↗</div>
+            <div class="tool-details">
+                <h3>Live Hosting</h3>
+                <p>Exploring easier website publishing.</p>
+            </div>
+            <span class="tool-status status-building">IN PROGRESS</span>
+        </article>
+
+        <article class="tool-item">
+            <span class="tool-index">03</span>
+            <div class="tool-icon">◇</div>
+            <div class="tool-details">
+                <h3>MMOD Web</h3>
+                <p>A Minecraft-related web project.</p>
+            </div>
+            <span class="tool-status status-planned">PLANNED</span>
+        </article>
+
+        <article class="tool-item">
+            <span class="tool-index">04</span>
+            <div class="tool-icon">✳</div>
+            <div class="tool-details">
+                <h3>Game Lab</h3>
+                <p>Small games and interactive experiments.</p>
+            </div>
+            <span class="tool-status status-exploring">EXPLORING</span>
+        </article>
+    </div>
+</section>
+
+<section class="section-wrap values-section">
+    <p class="section-label">05 / OUR APPROACH</p>
+    <h2>Built with <span>purpose.</span></h2>
+
+    <div class="values-grid">
+        <div class="value-item">
+            <span>✦</span>
+            <div>
+                <h3>Original Ideas</h3>
+                <p>Distinct concepts and designs made for each project.</p>
+            </div>
+        </div>
+
+        <div class="value-item">
+            <span>⌘</span>
+            <div>
+                <h3>Clean Code</h3>
+                <p>Organized foundations that are easier to improve.</p>
+            </div>
+        </div>
+
+        <div class="value-item">
+            <span>↗</span>
+            <div>
+                <h3>Continuous Growth</h3>
+                <p>Learning, experimenting and improving with every build.</p>
+            </div>
+        </div>
+
+        <div class="value-item">
+            <span>◎</span>
+            <div>
+                <h3>Useful Experiences</h3>
+                <p>Making projects that solve problems and serve a purpose.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section-wrap about-section">
+    <div class="about-copy">
+        <p class="section-label">06 / ABOUT BADAL STUDIO</p>
+        <h2>One studio.<br><span>Many possibilities.</span></h2>
+
+        <p>
+            Badal Studio is an independent creative development
+            space founded by Badal. It's a place to learn,
+            experiment and turn ambitious ideas into real digital projects.
+        </p>
+
+        <p>
+            This is just the beginning. Every project is another
+            step toward building something bigger.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <span class="about-card-mark">B.</span>
+        <p class="about-card-label">THE STUDIO PRINCIPLE</p>
+        <h3>Learn it.<br>Build it.<br><span>Make it real.</span></h3>
+        <div class="about-line"></div>
+        <p class="about-signature">— Badal</p>
+    </div>
+</section>
+
+<section id="contact" class="section-wrap contact-section">
+    <p class="section-label">07 / LET'S CONNECT</p>
+    <h2>Have an idea?<br><span>Let's build it.</span></h2>
+
+    <p class="contact-description">
+        Interested in a website or have a project idea?
+        Get in touch to discuss what you need.
+    </p>
+
+    <a href="mailto:badalz.business@gmail.com" class="btn btn-primary contact-btn">
+        Start a Conversation ↗
+    </a>
+
+    <p class="contact-note">Contact us about your next project.</p>
+</section>
+
+</main>
+
+<footer class="footer">
+    <a href="#home" class="logo footer-logo">
+        <span class="logo-mark">B</span>
+        <span>BADAL <strong>STUDIO</strong></span>
+    </a>
+
+    <p>Learn. Build. Grow.</p>
+
+    <div class="footer-links">
+        <a href="#samples">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © <span id="year">2026</span> Badal Studio. Built with curiosity.
+    </p>
+</footer>
 
 </body>
-</html>
+    </html>
