@@ -1,4 +1,3 @@
-
 /* =========================================
    BADAL STUDIO
    INTERACTIVE JAVASCRIPT
@@ -97,10 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 6. SAMPLE WEBSITE LINKS
-  // Check these paths against your actual folder names.
   const sampleLinks = {
-    tuition: "Sample/Tuition/index.html",
-    shop: "Sample/Shop/index.html"
+    tuition: "samples/tuition/index.html",
+    shop: "samples/shop/index.html"
   };
 
   $$("[data-sample]").forEach(card => {
@@ -249,4 +247,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Learn. Build. Grow. — Studio ready.");
 });
-   
